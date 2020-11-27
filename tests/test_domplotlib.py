@@ -1,11 +1,11 @@
 # stdlib
-from typing import Callable, List, Tuple
+from typing import Callable, Tuple
 
 # 3rd party
 import pytest
 from domdf_python_tools.paths import PathPlus
-from matplotlib.axes import Axes
-from matplotlib.figure import Figure
+from matplotlib.axes import Axes  # type: ignore
+from matplotlib.figure import Figure  # type: ignore
 from pytest_regressions.file_regression import FileRegressionFixture
 
 # this package
