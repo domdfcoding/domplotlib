@@ -88,7 +88,7 @@ def hatch_filled_histograms() -> Tuple[Figure, Axes]:
 		"""
 		print(orientation)
 		if orientation not in "hv":
-			raise ValueError("orientation must be in {{'h', 'v'}} " "not {o}".format(o=orientation))
+			raise ValueError("orientation must be in {{'h', 'v'}} not {o}".format(o=orientation))
 
 		kwargs.setdefault("step", "post")
 		edges = np.asarray(edges)
@@ -322,7 +322,7 @@ def markevery() -> Tuple[Figure, List[Axes]]:
 	axs = fig.subplots(rows, cols)
 	axs = trim_axs(axs, len(cases))
 
-	colour_cycle = itertools.cycle(plt.rcParams['axes.prop_cycle'].by_key()['color'])
+	colour_cycle = itertools.cycle(plt.rcParams["axes.prop_cycle"].by_key()["color"])
 
 	for ax, case in zip(axs, cases):
 		ax.set_title(f"markevery={case}")
