@@ -1,14 +1,14 @@
 {
   "tests.test_plots.test_plot_pie_from_tally_no_explode[default-False]": "7b132a4e66e6d27e4fb01541e11d32d28a7a74626367b86fc071da71a4750505",
-  "tests.test_plots.test_plot_pie_from_tally[default-True]": "b356786d53731af66e3741f6a62bd9c5d3b1c168d9226655cb55b04fce4f25b7",
-  "tests.test_plots.test_plot_pie_from_tally[default-False]": "0a386c57a8953ddaf174476afedc1ee338d8d269919f03f3c4d1520207d87f07",
-  "tests.test_plots.test_plot_pie_from_tally[domdf-False]": "d5a69eb6a73f15d0aeb522cc63734687b0d8d78898a1df65d688b3456d814a3c",
   "tests.test_plots.test_plot_pie_from_tally[domdf-True]": "f8cdd14dd0f0d82e78077ffe9757e9316ae34c17b25491d37d12cad4e2c29b90",
-  "tests.test_plots.test_plot_pie_from_tally_no_explode[default-True]": "9b769c99189ce7f6c8561b8b1087e8c9a219437ce844c34bedc1f8400aa1759d",
-  "tests.test_plots.test_plot_pie_from_tally_no_explode[domdf-False]": "5383b5944b9fc9b7d2bdce568fd167af89f82b8d93e67a546e2c76ff34370b51",
   "tests.test_plots.test_plot_pie_from_tally_no_explode[domdf-True]": "6601c5e8098af78c85994208327aba6869b38577a466b37024cfc298ba7282c6",
-  "tests.test_domplotlib.test_horizontal_legend[h_bar_chart]": "c7cbffda92f8558aa6b644aa561e3e1e24fd3828fbb209ddc8ece2eb30876e7d",
+  "tests.test_plots.test_plot_pie_from_tally[default-True]": "b356786d53731af66e3741f6a62bd9c5d3b1c168d9226655cb55b04fce4f25b7",
+  "tests.test_plots.test_plot_pie_from_tally[domdf-False]": "d5a69eb6a73f15d0aeb522cc63734687b0d8d78898a1df65d688b3456d814a3c",
+  "tests.test_plots.test_plot_pie_from_tally_no_explode[domdf-False]": "5383b5944b9fc9b7d2bdce568fd167af89f82b8d93e67a546e2c76ff34370b51",
+  "tests.test_plots.test_plot_pie_from_tally[default-False]": "0a386c57a8953ddaf174476afedc1ee338d8d269919f03f3c4d1520207d87f07",
+  "tests.test_plots.test_plot_pie_from_tally_no_explode[default-True]": "9b769c99189ce7f6c8561b8b1087e8c9a219437ce844c34bedc1f8400aa1759d",
   "tests.test_domplotlib.test_horizontal_legend_markevery": "850589b37ee01ab31dd98b90934c121cd14504cc0c5c888f0c83ce9dcbac0112",
+  "tests.test_domplotlib.test_horizontal_legend[koch_snowflake]": "957e9b9c42293232947c47a3584af2b5f7ddb90984255ae2dfc76594083fcad3",
   "tests.test_domplotlib.test_horizontal_legend[hatch_filled_histograms]": "be08ab867339f20056a951c0ce579181ccab323c5ef75ba66b8bfe8cd42bb61c",
-  "tests.test_domplotlib.test_horizontal_legend[koch_snowflake]": "957e9b9c42293232947c47a3584af2b5f7ddb90984255ae2dfc76594083fcad3"
+  "tests.test_domplotlib.test_horizontal_legend[h_bar_chart]": "c7cbffda92f8558aa6b644aa561e3e1e24fd3828fbb209ddc8ece2eb30876e7d"
 }
