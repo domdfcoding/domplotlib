@@ -6,7 +6,7 @@ from typing import Callable, Dict, Iterable, List, Optional, Sequence, Tuple, Un
 
 # 3rd party
 import numpy
-from cycler import cycler  # type: ignore[import]
+from cycler import cycler
 from matplotlib.axes import Axes  # type: ignore[import]
 from matplotlib.collections import PolyCollection  # type: ignore[import]
 from matplotlib.figure import Figure  # type: ignore[import]
