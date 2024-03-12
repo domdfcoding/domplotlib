@@ -1,5 +1,7 @@
-# 3rd party
+# stdlib
 import sys
+
+# 3rd party
 import pytest
 from domdf_python_tools.paths import PathPlus
 
@@ -21,6 +23,12 @@ elif sys.version_info[:2] == (3, 10):
 elif sys.version_info[:2] == (3, 11):
 	baseline_dir = str(PathPlus(__file__).parent / "baseline")
 	image_hashes = str(PathPlus(__file__).parent / "image_hashes_311.json")
+elif sys.version_info[:2] == (3, 12):
+	baseline_dir = str(PathPlus(__file__).parent / "baseline")
+	image_hashes = str(PathPlus(__file__).parent / "image_hashes_312.json")
+elif sys.version_info[:2] == (3, 13):
+	baseline_dir = str(PathPlus(__file__).parent / "baseline")
+	image_hashes = str(PathPlus(__file__).parent / "image_hashes_313.json")
 else:
 	baseline_dir = str(PathPlus(__file__).parent / "baseline")
 	image_hashes = str(PathPlus(__file__).parent / "image_hashes.json")
