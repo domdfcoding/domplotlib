@@ -48,4 +48,4 @@ known_third_party = [
     "requests",
     "typing_extensions",
 ]
-known_first_party = "domplotlib"
+known_first_party = [ "domplotlib",]

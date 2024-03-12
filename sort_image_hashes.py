@@ -18,4 +18,4 @@ for filename in [
 	data.sort(key=itemgetter(0))
 	with open(filename, 'w', encoding="UTF-8") as fp:
 		json.dump(dict(data), fp, indent=2)
-		fp.write("\n")
+		fp.write('\n')
