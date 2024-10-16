@@ -7,9 +7,7 @@ for filename in [
 		"tests/image_hashes_37.json",
 		"tests/image_hashes_38.json",
 		"tests/image_hashes_39.json",
-		"tests/image_hashes_310.json",
-		"tests/image_hashes_311.json",
-		"tests/image_hashes_312.json",
+		"tests/image_hashes_313.json",
 		"tests/image_hashes.json",
 		]:
 	with open(filename, encoding="UTF-8") as fp:
