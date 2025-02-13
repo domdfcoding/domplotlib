@@ -11,6 +11,6 @@ tox -e py38 -- --mpl-generate-hash-library=tests/image_hashes_38.json
 
 tox -e py39 -- --mpl-generate-hash-library=tests/image_hashes_39.json
 
-tox -e py313 -- --mpl-generate-hash-library=tests/image_hashes_313.json
+tox -e py310 -- --mpl-generate-hash-library=tests/image_hashes_313.json
 
 python3 sort_image_hashes.py
