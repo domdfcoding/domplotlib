@@ -27,23 +27,6 @@ lines_between_types = 0
 use_parentheses = true
 remove_redundant_aliases = true
 default_section = "THIRDPARTY"
-known_third_party = [
-    "cawdrey",
-    "coincidence",
-    "coverage",
-    "coverage_pyver_pragma",
-    "domdf_python_tools",
-    "github",
-    "importlib_metadata",
-    "matplotlib",
-    "pytest",
-    "pytest_cov",
-    "pytest_mpl",
-    "pytest_randomly",
-    "pytest_timeout",
-    "requests",
-    "typing_extensions",
-]
 known_first_party = [ "domplotlib",]
 
 [config]
