@@ -3,12 +3,12 @@
   "tests.test_domplotlib.test_horizontal_legend[hatch_filled_histograms]": "bd6e2f676dace2baf59df717fa7f1653fc182e216295f044c097d8971aa29e9e",
   "tests.test_domplotlib.test_horizontal_legend[koch_snowflake]": "052a01d5f8b56cece2beba357c68a22999e88484e13a237f12bdcd08f9dd0a2c",
   "tests.test_domplotlib.test_horizontal_legend_markevery": "bd78ffae1d1961281114841d14b25c5708e54dc087d1a4587a5d15ac8c2b2a2c",
-  "tests.test_plots.test_plot_pie_from_tally[default-False]": "b8e5b0d981e6c2256d04da2b6e176735294b20b789fdfbb46c499c051059ad5d",
-  "tests.test_plots.test_plot_pie_from_tally[default-True]": "7a2fdbbde996f550b328b92ec4da3de7c989edc17ee5f2e642867acff3cf8d1c",
-  "tests.test_plots.test_plot_pie_from_tally[domdf-False]": "61fbe0d83576ab09cb76e90a690291fa49d1f8271f256d500e65483d8c8ea7bd",
-  "tests.test_plots.test_plot_pie_from_tally[domdf-True]": "cf0b3499d498e04289a433e18983a9a064079e8d85eed25bc5ae244fc6e8ddb3",
+  "tests.test_plots.test_plot_pie_from_tally[default-False]": "5a3bc95992e097c139fc5d42a85c28356ba618060c54b86351983907c5037542",
+  "tests.test_plots.test_plot_pie_from_tally[default-True]": "d6e087d2437c8192d9e67a66512282ecb4ae3b5c9cd266297f0b8f26ac8f2bc8",
+  "tests.test_plots.test_plot_pie_from_tally[domdf-False]": "a0c7f6d3f186857e4c2177b175c3f8e432b0ee5f45067e1a0ce579e527725858",
+  "tests.test_plots.test_plot_pie_from_tally[domdf-True]": "69129b1dcb105286f1cd35bf32d24d519c62b30346f194c2842a69b3c5f3a069",
   "tests.test_plots.test_plot_pie_from_tally_no_explode[default-False]": "d5321c2d4cfcd1a9ed6b480ced35cbf67eab3363780d994e6af67e962bbe019b",
-  "tests.test_plots.test_plot_pie_from_tally_no_explode[default-True]": "b0bf424e86e5d256b4b0eec005466fadb2fb8a0e6585bee4048fdc2844f23c59",
-  "tests.test_plots.test_plot_pie_from_tally_no_explode[domdf-False]": "5ef70de90ca4c26cef45028faf8bd14a0da4848635a21b52870e2ce7208f09a4",
-  "tests.test_plots.test_plot_pie_from_tally_no_explode[domdf-True]": "d03de1c032b0eda9ddb03a25c0c9af641a407d98c8e8fb34a8e5a6d2c00a8242"
+  "tests.test_plots.test_plot_pie_from_tally_no_explode[default-True]": "25751bccf1fd99678c452a6c3fe7f03989fda59c287a08a9858d22598d1502c4",
+  "tests.test_plots.test_plot_pie_from_tally_no_explode[domdf-False]": "794e1ee2001ce0862c00e3064cfbbabacddbaba38acb4359b634f8effdad801f",
+  "tests.test_plots.test_plot_pie_from_tally_no_explode[domdf-True]": "44c322dd181a136ac67b2f5a29d884538418cb46dc2c161d9d4c4303b21bbacf"
 }

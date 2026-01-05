@@ -1,8 +1,5 @@
 #!/bin/bash
 
-tox -e py36 -- --mpl-generate-path=tests/baseline_36
-tox -e py36 -- --mpl-generate-hash-library=tests/image_hashes_36.json
-
 tox -e py37 -- --mpl-generate-path=tests/baseline_37
 tox -e py37 -- --mpl-generate-hash-library=tests/image_hashes_37.json
 

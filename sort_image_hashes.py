@@ -3,7 +3,6 @@ import json
 from operator import itemgetter
 
 for filename in [
-		"tests/image_hashes_36.json",
 		"tests/image_hashes_37.json",
 		"tests/image_hashes_38.json",
 		"tests/image_hashes_39.json",

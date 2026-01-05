@@ -5,10 +5,7 @@ import sys
 import pytest
 from domdf_python_tools.paths import PathPlus
 
-if sys.version_info[:2] == (3, 6):
-	baseline_dir = str(PathPlus(__file__).parent / "baseline_36")
-	image_hashes = str(PathPlus(__file__).parent / "image_hashes_36.json")
-elif sys.version_info[:2] == (3, 7):
+if sys.version_info[:2] == (3, 7):
 	baseline_dir = str(PathPlus(__file__).parent / "baseline_37")
 	image_hashes = str(PathPlus(__file__).parent / "image_hashes_37.json")
 elif sys.version_info[:2] == (3, 8):
