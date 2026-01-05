@@ -33,8 +33,8 @@ from typing import Collection, List, Optional, Tuple, overload
 
 # 3rd party
 from cawdrey.tally import SupportsMostCommon, Tally
-from matplotlib.patches import Wedge  # type: ignore[import]
-from matplotlib.text import Text  # type: ignore[import]
+from matplotlib.patches import Wedge
+from matplotlib.text import Text
 
 __all__ = ["pie_from_tally"]
 
@@ -79,6 +79,7 @@ def pie_from_tally(
 	:param explode: A list of key names to explode the segments for.
 	:param percent: If :py:obj:`True`, shows the percentage of each element out of the sum of all elements.
 	:param reverse: Order the wedges clockwise rather than anticlockwise..
+	:param autopct:
 	:param \*\*kwargs: Other keyword arguments taken by :meth:`matplotlib.axes.Axes.pie`.
 
 	:return:
@@ -94,7 +95,7 @@ def pie_from_tally(
 	else:  # pragma: no cover
 
 		# 3rd party
-		from matplotlib import pyplot  # type: ignore[import]
+		from matplotlib import pyplot
 		ax = pyplot.gca()
 
 	kwargs.pop("labels", None)

@@ -5,8 +5,8 @@ from typing import Iterable, Tuple
 # 3rd party
 import pytest
 from cawdrey import Tally
-from matplotlib.figure import Figure  # type: ignore[import]
-from matplotlib.text import Text  # type: ignore[import]
+from matplotlib.figure import Figure
+from matplotlib.text import Text
 
 # this package
 from domplotlib.plots import pie_from_tally

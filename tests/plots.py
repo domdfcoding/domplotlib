@@ -7,9 +7,9 @@ from typing import Callable, Dict, Iterable, List, Optional, Sequence, Tuple, Un
 # 3rd party
 import numpy
 from cycler import cycler
-from matplotlib.axes import Axes  # type: ignore[import]
-from matplotlib.collections import PolyCollection  # type: ignore[import]
-from matplotlib.figure import Figure  # type: ignore[import]
+from matplotlib.axes import Axes
+from matplotlib.collections import PolyCollection
+from matplotlib.figure import Figure
 
 # this package
 from domplotlib.styles.default import plt
@@ -118,7 +118,7 @@ def hatch_filled_histograms() -> Tuple[Figure, Axes]:
 		hist_func: Optional[Callable] = None,
 		labels: Union[Iterable[str], Iterable[None], None] = None,
 		plot_func: Optional[Callable] = None,
-		plot_kwargs=None
+		plot_kwargs=None,
 		) -> Dict[str, PolyCollection]:
 
 		# deal with default binning function
@@ -161,7 +161,7 @@ def hatch_filled_histograms() -> Tuple[Figure, Axes]:
 			print(sty)
 			sty.update(plot_kwargs)
 			print(sty)
-			ret = plot_func(ax, edges, top, bottoms=bottoms, label=label, **sty)
+			ret = plot_func(ax, edges, top, bottoms=bottoms, label=label, **sty)  # type: ignore[arg-type]  # TODO
 			bottoms = top
 			arts[label] = ret
 		ax.legend(fontsize=10)
@@ -203,7 +203,7 @@ def h_bar_chart() -> Tuple[Figure, Axes]:
 			"Question 3": [35, 37, 7, 2, 19],
 			"Question 4": [32, 11, 9, 15, 33],
 			"Question 5": [21, 29, 5, 5, 40],
-			"Question 6": [8, 19, 5, 30, 38]
+			"Question 6": [8, 19, 5, 30, 38],
 			}
 
 	def survey(results: Dict[str, List], category_names: Sequence[str]) -> Tuple[Figure, Axes]:
@@ -259,17 +259,17 @@ def markevery() -> Tuple[Figure, List[Axes]]:
 	x = numpy.linspace(0, 10 - 2 * delta, 200) + delta
 	y = numpy.sin(x) + 1.0 + delta
 
-	def trim_axs(axs: Axes, N: int) -> Axes:
+	def trim_axs(axs: List[Axes], N: int) -> List[Axes]:
 		"""
 		Reduce *axs* to *N* Axes. All further Axes are removed from the figure.
 		"""
-		axs = axs.flat
+		axs = axs.flat  # type: ignore[attr-defined]  # TODO
 		for ax in axs[N:]:
 			ax.remove()
 		return axs[:N]
 
 	fig = plt.figure(figsize=figsize, constrained_layout=True)
-	axs = fig.subplots(rows, cols)
+	axs: List[Axes] = fig.subplots(rows, cols)
 	axs = trim_axs(axs, len(cases))
 
 	colour_cycle = itertools.cycle(plt.rcParams["axes.prop_cycle"].by_key()["color"])

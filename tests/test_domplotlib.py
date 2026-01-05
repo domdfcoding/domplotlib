@@ -4,8 +4,8 @@ from typing import Callable, Tuple
 # 3rd party
 import pytest
 from domdf_python_tools.paths import PathPlus
-from matplotlib.axes import Axes  # type: ignore[import]
-from matplotlib.figure import Figure  # type: ignore[import]
+from matplotlib.axes import Axes
+from matplotlib.figure import Figure
 
 # this package
 from domplotlib import horizontal_legend, save_svg

@@ -84,10 +84,10 @@ from domdf_python_tools.iterative import chunks
 from domdf_python_tools.pagesizes import PageSize
 from domdf_python_tools.paths import PathPlus, clean_writer
 from domdf_python_tools.typing import PathLike
-from matplotlib.artist import Artist  # type: ignore[import]
-from matplotlib.axes import Axes  # type: ignore[import]
-from matplotlib.figure import Figure  # type: ignore[import]
-from matplotlib.legend import Legend  # type: ignore[import]
+from matplotlib.artist import Artist
+from matplotlib.axes import Axes
+from matplotlib.figure import Figure
+from matplotlib.legend import Legend
 from typing_extensions import Literal
 
 __all__ = ["create_figure", "horizontal_legend", "save_svg", "transpose"]
@@ -188,14 +188,14 @@ def horizontal_legend(
 		ncol: int = 1,
 		**kwargs,
 		) -> Legend:
-	"""
+	r"""
 	Place a legend on the figure, with the items arranged to read right to left rather than top to bottom.
 
 	:param fig: The figure to plot the legend on.
 	:param handles:
 	:param labels:
 	:param ncol: The number of columns in the legend.
-	:param kwargs: Addition keyword arguments passed to :meth:`matplotlib.figure.Figure.legend`.
+	:param \*\*kwargs: Addition keyword arguments passed to :meth:`matplotlib.figure.Figure.legend`.
 	"""
 
 	if handles is None and labels is None:
@@ -207,7 +207,7 @@ def horizontal_legend(
 	if labels:
 		labels = list(filter(None, transpose(labels, ncol)))
 
-	return fig.legend(handles, labels, ncol=ncol, **kwargs)
+	return fig.legend(handles, labels, ncol=ncol, **kwargs)  # type: ignore[arg-type]
 
 
 def create_figure(
@@ -229,13 +229,13 @@ def create_figure(
 	"""  # noqa: D400
 
 	# 3rd party
-	from matplotlib import pyplot  # type: ignore[import]
+	from matplotlib import pyplot
 
 	# Import here to avoid clobbering theme and backend choices.
 
 	fig = pyplot.figure(figsize=pagesize)
 
 	# [left, bottom, width, height]
-	ax = fig.add_axes([left, bottom, 1 - left - right, 1 - top - bottom])
+	ax = fig.add_axes((left, bottom, 1 - left - right, 1 - top - bottom))
 
 	return fig, ax
