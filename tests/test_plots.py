@@ -47,7 +47,7 @@ def test_plot_pie_from_tally(reverse: bool, style: str):
 		startangle=90,
 		ax=ax,
 		reverse=reverse,
-		)
+	)
 
 	assert len(patches) == 5
 	assert len(texts) == 5
@@ -101,7 +101,7 @@ def test_plot_pie_from_tally_no_explode(reverse: bool, style: str):
 		startangle=90,
 		ax=ax,
 		reverse=reverse,
-		)
+	)
 
 	assert len(patches) == 5
 	assert len(texts) == 5

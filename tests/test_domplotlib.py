@@ -13,12 +13,15 @@ from tests.common import check_images
 from tests.plots import h_bar_chart, hatch_filled_histograms, koch_snowflake, markevery
 
 
-@pytest.mark.parametrize("plot", [
-		koch_snowflake,
-		hatch_filled_histograms,
-		h_bar_chart,
-		markevery,
-		])
+@pytest.mark.parametrize(
+		"plot",
+		[
+				koch_snowflake,
+				hatch_filled_histograms,
+				h_bar_chart,
+				markevery,
+				],
+		)
 def test_save_svg(tmp_pathplus: PathPlus, plot: Callable[[], Tuple[Figure, ...]]):
 	fig, *_ = plot()
 
@@ -30,11 +33,14 @@ def test_save_svg(tmp_pathplus: PathPlus, plot: Callable[[], Tuple[Figure, ...]]
 		assert line.rstrip() == line
 
 
-@pytest.mark.parametrize("plot", [
-		koch_snowflake,
-		hatch_filled_histograms,
-		h_bar_chart,
-		])
+@pytest.mark.parametrize(
+		"plot",
+		[
+				koch_snowflake,
+				hatch_filled_histograms,
+				h_bar_chart,
+				],
+		)
 @check_images
 def test_horizontal_legend(plot: Callable[[], Tuple[Figure, Axes]]):
 	fig, ax = plot()

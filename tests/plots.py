@@ -94,7 +94,7 @@ def hatch_filled_histograms() -> Tuple[Figure, Axes]:
 		if len(edges_array) - 1 != len(values_array):
 			raise ValueError(
 					'Must provide one more bin edge than value not: '
-					'len(edges): {lb} len(values): {lv}'.format(lb=len(edges_array), lv=len(values_array))
+					'len(edges): {lb} len(values): {lv}'.format(lb=len(edges_array), lv=len(values_array)),
 					)
 
 		if bottoms is None:
@@ -119,7 +119,7 @@ def hatch_filled_histograms() -> Tuple[Figure, Axes]:
 		labels: Union[Iterable[str], Iterable[None], None] = None,
 		plot_func: Optional[Callable] = None,
 		plot_kwargs=None,
-		) -> Dict[str, PolyCollection]:
+	) -> Dict[str, PolyCollection]:
 
 		# deal with default binning function
 		if hist_func is None:
