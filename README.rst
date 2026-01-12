@@ -103,7 +103,7 @@ domplotlib
 	:alt: Maintenance
 
 .. |pypi-downloads| image:: https://img.shields.io/pypi/dm/domplotlib
-	:target: https://pypi.org/project/domplotlib/
+	:target: https://pypistats.org/packages/domplotlib
 	:alt: PyPI - Downloads
 
 .. end shields
